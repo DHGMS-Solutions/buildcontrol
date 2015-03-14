@@ -36,13 +36,13 @@
 
 <p>Build Control is a Work in progress on having a single build template that can be used to control build quality at different stages of the development cycle.</p>
 
-{% for rule in site.data.rules %}
 <div class="row">
   <div class="col-md-6">Rule Name</div>
   <div class="col-md-2">Dev</div>
   <div class="col-md-2">Test</div>
   <div class="col-md-2">Prod</div>
 </div>
+{% for rule in site.data.rules %}
 <div class="row">
   <div class="col-md-6">{{ rule.name }}</div>
   <div class="col-md-2">?</div>
