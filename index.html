@@ -35,7 +35,22 @@
 <a id="welcome-to-build-control" class="anchor" href="#welcome-to-build-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Build Control.</h3>
 
 <p>Build Control is a Work in progress on having a single build template that can be used to control build quality at different stages of the development cycle.</p>
-      </section>
+
+{% for rule in site.data.rules %}
+<div class="row">
+  <div class="col-md-6">Rule Name</div>
+  <div class="col-md-2">Dev</div>
+  <div class="col-md-2">Test</div>
+  <div class="col-md-2">Prod</div>
+</div>
+<div class="row">
+  <div class="col-md-6">{{ rule.name }}</div>
+  <div class="col-md-2">?</div>
+  <div class="col-md-2">?</div>
+  <div class="col-md-2">?</div>
+</div>
+{% endfor %}
+</section>
     </div>
 
     <!-- FOOTER  -->
