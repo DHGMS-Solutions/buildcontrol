@@ -12,8 +12,8 @@ title: Build Control Rules
 {% for rule in site.data.rules %}
 <tr>
   <td>{{ rule.name }}</td>
-  <td class="col-md-2">?</td>
-  <td class="col-md-2">?</td>
-  <td class="col-md-2">?</td>
+  <td>?</td>
+  <td>?</td>
+  <td>?</td>
 </div>
 {% endfor %}
