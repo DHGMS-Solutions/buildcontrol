@@ -1,11 +1,11 @@
-- rule: Style Cop
+- name: Style Cop
   development:
   - description: No
   test:
   - description: Yes
   release:
   - description: Yes
-- rule: Treat Warnings As Errors
+- name: Treat Warnings As Errors
   development:
   - description: No
   - failure: warn
@@ -15,7 +15,7 @@
   release:
   - description: Yes
   - failure: fail
-- rule: Unit Tests must pass
+- name: Unit Tests must pass
   development:
   - description: Yes
   - failure: warn
@@ -25,7 +25,7 @@
   release:
   - description: Yes
   - failure: fail
-- rule: Test Code Coverage
+- name: Test Code Coverage
   development:
   - description: 80%
   - failure: warn
@@ -35,7 +35,7 @@
   release:
   - description: 80%
   - failure: fail
-- rule: Nuget Packaging
+- name: Nuget Packaging
   development:
   - description: Off
   test:
@@ -44,7 +44,7 @@
   release:
   - description: On
   - failure: fail
-- rule: OctoPack
+- name: OctoPack
   development:
   - description: Off
   test:
