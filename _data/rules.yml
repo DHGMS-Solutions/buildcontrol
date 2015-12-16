@@ -1,0 +1,55 @@
+- name: Style Cop
+  development:
+  - description: No
+  test:
+  - description: Yes
+  release:
+  - description: Yes
+- name: Treat Warnings As Errors
+  development:
+  - description: No
+  - failure: warn
+  test:
+  - description: Yes
+  - failure: fail
+  release:
+  - description: Yes
+  - failure: fail
+- name: Unit Tests must pass
+  development:
+  - description: Yes
+  - failure: warn
+  test:
+  - description: Yes
+  - failure: fail
+  release:
+  - description: Yes
+  - failure: fail
+- name: Test Code Coverage
+  development:
+  - description: 80%
+  - failure: warn
+  test:
+  - description: 80%
+  - failure: fail
+  release:
+  - description: 80%
+  - failure: fail
+- name: Nuget Packaging
+  development:
+  - description: Off
+  test:
+  - description: Pre
+  - failure: fail
+  release:
+  - description: On
+  - failure: fail
+- name: OctoPack
+  development:
+  - description: Off
+  test:
+  - description: Pre
+  - failure: fail
+  release:
+  - description: On
+  - failure: fail
